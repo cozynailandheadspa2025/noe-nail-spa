@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NOE' Nails Spa is coming soon to 4720 FM 2920, Suite 6, Spring, TX 77388. Manicure, pedicure, waxing and lash extensions. Contact noenailspa@gmail.com." />
+  <title>NOE' Nails Spa | Spring, Texas</title>
+  <style>
+    :root{
+      --bg:#fffbf7;
+      --cream:#f7efe6;
+      --soft:#f0e4d6;
+      --sand:#e3d0bb;
+      --latte:#d2b496;
+      --gold:#b58b5a;
+      --gold-deep:#9d7446;
+      --text:#5d4a3b;
+      --muted:#877362;
+      --white:#ffffff;
+      --shadow:0 18px 45px rgba(98,71,44,.10);
+      --radius:24px;
+      --container:min(1180px, calc(100% - 40px));
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial, Helvetica, sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit}
+    .container{width:var(--container);margin:auto}
+    .serif{font-family:Georgia, 'Times New Roman', serif}
+    .eyebrow{display:inline-block;font-size:11px;letter-spacing:.30em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    .section{padding:90px 0}
+    .section-title{font:normal clamp(34px,4vw,56px) Georgia, 'Times New Roman', serif;line-height:1.12;margin:16px 0 12px}
+    .section-copy{max-width:620px;color:var(--muted);margin:0 auto}
+    .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;background:var(--text);border:1px solid var(--text);color:#fff;font-size:12px;letter-spacing:.16em;text-transform:uppercase;transition:.2s ease;cursor:pointer}
+    .btn:hover{background:var(--gold);border-color:var(--gold)}
+    .btn.alt{background:transparent;color:var(--text);border-color:#cbb39a}
+    .btn.alt:hover{background:var(--cream)}
+
+    header{position:sticky;top:0;z-index:30;background:rgba(255,251,247,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(205,182,156,.35)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px;min-width:0}
+    .brand img{height:50px;width:auto;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .brand-text{min-width:0}
+    .brand-text strong{display:block;font:normal 24px Georgia,serif;letter-spacing:.08em}
+    .brand-text span{display:block;font-size:10px;letter-spacing:.33em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+    .nav-links{display:flex;align-items:center;gap:26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+    .nav-links a{color:var(--muted)}
+    .nav-links a:hover{color:var(--gold-deep)}
+    .menu-toggle{display:none;background:none;border:0;font-size:28px;color:var(--text)}
+
+    .hero{padding:34px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:stretch}
+    .hero-copy{background:linear-gradient(145deg,#fbf5ee,#efdfcf);border-radius:32px;padding:clamp(30px,4vw,58px);display:flex;flex-direction:column;justify-content:center;min-height:640px;box-shadow:var(--shadow)}
+    .hero-copy h1{font:normal clamp(48px,6vw,86px) Georgia,'Times New Roman',serif;line-height:.98;margin:20px 0 18px;color:#503f31}
+    .hero-copy p{font-size:16px;color:var(--muted);max-width:500px;margin:0 0 30px}
+    .hero-points{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 34px;padding:0;list-style:none}
+    .hero-points li{padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(197,169,137,.35);font-size:12px;letter-spacing:.10em;text-transform:uppercase;color:var(--text)}
+    .hero-image{border-radius:32px;overflow:hidden;box-shadow:var(--shadow);min-height:640px}
+    .hero-image img{width:100%;height:100%;object-fit:cover}
+
+    .intro{padding-top:18px;padding-bottom:12px}
+    .intro-card{background:var(--white);border-radius:28px;padding:26px 28px;border:1px solid rgba(210,191,168,.5);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .intro-card div{padding:8px 10px}
+    .intro-card h3{font:normal 22px Georgia,serif;margin:0 0 10px}
+    .intro-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .center-head{text-align:center;margin-bottom:40px}
+    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .service-card{background:var(--white);border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(216,197,176,.55)}
+    .service-card img{width:100%;aspect-ratio:5/4;object-fit:cover}
+    .service-body{padding:26px}
+    .service-num{font:normal 16px Georgia,serif;letter-spacing:.16em;color:var(--gold)}
+    .service-body h3{font:normal 34px Georgia,serif;margin:8px 0 10px}
+    .service-body p{margin:0;color:var(--muted)}
+
+    .about{background:linear-gradient(180deg,#f9f2ea 0%, #fffbf7 100%)}
+    .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+    .about-image{border-radius:32px;overflow:hidden;box-shadow:var(--shadow)}
+    .about-image img{width:100%;height:100%;object-fit:cover}
+    .about-copy p{color:var(--muted);margin:0 0 16px}
+    .about-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0 0;padding:0;list-style:none}
+    .about-list li{background:#fff;border:1px solid rgba(216,197,176,.55);padding:16px 18px;border-radius:18px;font-size:14px;color:var(--text);box-shadow:0 8px 20px rgba(98,71,44,.06)}
+
+    .gallery-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:18px}
+    .gallery-grid .tile{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);min-height:250px}
+    .gallery-grid .tile img{width:100%;height:100%;object-fit:cover}
+    .gallery-grid .tile.tall{grid-row:span 2;min-height:520px}
+    .gallery-grid .tile.copy{background:linear-gradient(150deg,#f5ebe0,#ead8c5);padding:32px;display:flex;flex-direction:column;justify-content:center}
+    .gallery-grid .tile.copy h3{font:normal 38px Georgia,serif;margin:8px 0 14px}
+    .gallery-grid .tile.copy p{margin:0;color:var(--muted)}
+
+    .cta{padding:80px 0}
+    .cta-box{background:linear-gradient(135deg,#5d4a3b,#7a5e49);color:#fff;border-radius:32px;padding:44px 38px;display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;box-shadow:var(--shadow)}
+    .cta-box p{margin:0;color:#efe4da}
+    .cta-actions{display:flex;justify-content:flex-end;gap:14px;flex-wrap:wrap}
+    .cta .btn{background:#fff;color:var(--text);border-color:#fff}
+    .cta .btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+    .cta .btn.alt:hover{background:rgba(255,255,255,.08)}
+
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-card,.hours-card{background:#fff;border:1px solid rgba(216,197,176,.55);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+    .contact-card h3,.hours-card h3{font:normal 30px Georgia,serif;margin:0 0 14px}
+    .detail-list{margin:0;padding:0;list-style:none}
+    .detail-list li{padding:14px 0;border-bottom:1px solid #eee1d4}
+    .detail-list li:last-child{border-bottom:0;padding-bottom:0}
+    .detail-label{display:block;font-size:11px;letter-spacing:.20em;text-transform:uppercase;color:var(--gold)}
+    .detail-value{display:block;margin-top:4px;color:var(--muted);overflow-wrap:anywhere}.detail-value a,.note a,footer a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}footer a{color:inherit}.directions-link{display:inline-flex;margin-top:10px;padding:9px 16px;border:1px solid #cbb39a;border-radius:999px;color:var(--gold-deep);font-size:12px;letter-spacing:.08em}.directions-link:hover{background:var(--cream)}
+    .hours-table{display:grid;grid-template-columns:1fr auto;gap:10px 20px;color:var(--muted);font-size:15px}
+    .hours-table strong{color:var(--text);font-weight:600}
+    .note{margin-top:18px;font-size:13px;color:var(--muted);background:var(--cream);padding:14px 16px;border-radius:16px}
+
+    footer{padding:36px 0 50px;color:var(--muted)}
+    .footer-box{padding-top:28px;border-top:1px solid rgba(210,191,168,.55);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .footer-brand{display:flex;align-items:center;gap:14px}
+    .footer-brand img{height:48px;width:auto;border-radius:8px}
+    .small{font-size:13px}
+
+    @media (max-width: 980px){
+      .hero-grid,.about-grid,.cta-box,.contact-grid{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr 1fr}
+      .gallery-grid .tile.tall{grid-row:auto;min-height:320px}
+      .cta-actions{justify-content:flex-start}
+      .intro-card{grid-template-columns:1fr}
+    }
+    @media (max-width: 760px){
+      .nav{height:74px}
+      .menu-toggle{display:block}
+      .nav-links{display:none;position:absolute;top:74px;left:0;right:0;background:rgba(255,251,247,.98);padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid rgba(205,182,156,.35)}
+      .nav-links.show{display:flex}
+      .brand img{height:44px}
+      .brand-text strong{font-size:20px}
+      .hero-copy,.hero-image{min-height:auto}
+      .section{padding:72px 0}
+      .gallery-grid{grid-template-columns:1fr}
+      .gallery-grid .tile{min-height:320px}
+      .gallery-grid .tile.copy{min-height:auto}
+      .about-list{grid-template-columns:1fr}
+      .hero-copy h1{font-size:56px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="NOE' Nails Spa home">
+        <img src="assets/logo.jpg" alt="NOE' Nails Spa logo" />
+        <span class="brand-text"><strong>NOE'</strong><span>Nails Spa</span></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleMenu(this)">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#contact" style="padding:12px 20px">Book Soon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Coming Soon • Spring, Texas</span>
+          <h1>Beauty in<br>every detail.</h1>
+          <p>Welcome to NOE' Nails Spa — a refined beauty destination where elegant nails, relaxing spa moments, smooth skin, and beautiful lashes come together in one warm, luxurious space.</p>
+          <ul class="hero-points">
+            <li>Manicure</li>
+            <li>Pedicure</li>
+            <li>Waxing</li>
+            <li>Lash Extensions</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn" href="#services">Explore Services</a>
+            <a class="btn alt" href="#contact">Booking Link Coming Soon</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero.webp" alt="Concept image showing the manicure spa aesthetic for NOE' Nails Spa" />
+        </div>
+      </div>
+    </section>
+
+    <section class="intro container intro">
+      <div class="intro-card">
+        <div>
+          <h3>Luxury Feel</h3>
+          <p>Warm beige tones, soft botanical touches, and a calm atmosphere designed to help every guest relax.</p>
+        </div>
+        <div>
+          <h3>Thoughtful Care</h3>
+          <p>From classic nail maintenance to finishing details, every service is created with comfort and beauty in mind.</p>
+        </div>
+        <div>
+          <h3>Modern Beauty</h3>
+          <p>Your one-stop beauty spa for manicures, pedicures, waxing, and lash extensions — all under one roof.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">Our Services</span>
+          <h2 class="section-title">Beauty services designed to refresh, polish, and elevate.</h2>
+          <p class="section-copy">We are preparing a curated menu of nail and beauty services for guests who appreciate both beautiful results and a relaxing experience.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="assets/manicure.webp" alt="Manicure service" />
+            <div class="service-body">
+              <div class="service-num">01</div>
+              <h3>Manicure</h3>
+              <p>Clean shaping, cuticle care, and polished finishes designed to keep your hands looking effortlessly beautiful — from simple elegance to a more refined statement.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="assets/pedicure.webp" alt="Pedicure service" />
+            <div class="service-body">
+              <div class="service-num">02</div>
+              <h3>Pedicure</h3>
+              <p>A soothing, spa-inspired treatment for tired feet featuring relaxing care, softening rituals, and the fresh finish that leaves you feeling renewed.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="assets/waxing.webp" alt="Waxing service" />
+            <div class="service-body">
+              <div class="service-num">03</div>
+              <h3>Waxing</h3>
+              <p>Professional waxing services performed in a clean and comfortable setting to help you feel smooth, confident, and beautifully maintained.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="assets/lash.webp" alt="Lash extension service" />
+            <div class="service-body">
+              <div class="service-num">04</div>
+              <h3>Lash Extensions</h3>
+              <p>Soft, wispy, and beautifully balanced lash looks that bring subtle definition or glamorous fullness while still feeling elegant and wearable.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="assets/interior.webp" alt="Concept image of the elegant salon aesthetic planned for NOE' Nails Spa" />
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">About NOE'</span>
+          <h2 class="section-title">A new beauty destination coming to Spring, Texas.</h2>
+          <p>NOE' Nails Spa was created with a simple idea: self-care should feel beautiful from the moment you walk in. Our vision is to offer a polished, welcoming space where guests can enjoy a little luxury and leave feeling refreshed.</p>
+          <p>Inspired by soft neutrals, elegant gold accents, and a calm spa atmosphere, NOE' is designed for guests who love clean beauty, thoughtful service, and a relaxing experience.</p>
+          <ul class="about-list">
+            <li><strong>Elegant Atmosphere</strong><br>Warm, welcoming, and curated to feel relaxing.</li>
+            <li><strong>Beauty Essentials</strong><br>Manicures, pedicures, waxing, and lashes all in one place.</li>
+            <li><strong>Guest Experience</strong><br>Every detail is planned to feel comfortable and refined.</li>
+            <li><strong>Coming Soon</strong><br>Grand opening details and booking information will be announced soon.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="center-head">
+          <span class="eyebrow">Gallery</span>
+          <h2 class="section-title">A glimpse of the NOE' experience.</h2>
+          <p class="section-copy">Soft tones, delicate details, and a calming beauty-spa ambiance — the kind of atmosphere we are creating for every visit.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="tile tall"><img src="assets/gallery-nails.webp" alt="Elegant nude manicure close-up" /></div>
+          <div class="tile"><img src="assets/pedicure.webp" alt="Luxury pedicure service" /></div>
+          <div class="tile"><img src="assets/lash.webp" alt="Lash extension close-up" /></div>
+          <div class="tile"><img src="assets/waxing.webp" alt="Beauty waxing treatment" /></div>
+          <div class="tile copy">
+            <span class="eyebrow">Relax • Refresh • Repeat</span>
+            <h3>Soft beauty. Calm luxury.</h3>
+            <p>All preview images on this website were created to reflect the NOE' brand aesthetic. They can be replaced later with your real salon and service photos whenever you are ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-box">
+        <div>
+          <span class="eyebrow" style="color:#f0d2aa">Booking & Opening Updates</span>
+          <h2 class="section-title" style="color:#fff;margin-top:10px">We’re getting ready to welcome you.</h2>
+          <p>Online booking will be added as soon as your appointment link is ready. Until then, this website can grow with your brand and be updated anytime with our full service menu and booking details.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="#contact">View Contact Info</a>
+          <a class="btn alt" href="#home">Back to Top</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <span class="eyebrow">Contact</span>
+          <h3>We can't wait to meet you.</h3>
+          <ul class="detail-list">
+            <li><span class="detail-label">Location</span><span class="detail-value">4720 FM 2920, Suite 6, Spring, TX 77388</span><a class="directions-link" href="https://www.google.com/maps/search/?api=1&query=4720%20FM%202920%2C%20Suite%206%2C%20Spring%2C%20TX%2077388" target="_blank" rel="noopener noreferrer" aria-label="Get directions to NOE Nails Spa on Google Maps">Get Directions ↗</a></li>
+            <li><span class="detail-label">Booking</span><span class="detail-value">Online booking coming soon</span></li>
+            <li><span class="detail-label">Phone</span><span class="detail-value">Phone number coming soon</span></li>
+            <li><span class="detail-label">Email</span><span class="detail-value"><a href="mailto:noenailspa@gmail.com">noenailspa@gmail.com ↗</a></span></li>
+            <li><span class="detail-label">Website</span><span class="detail-value">noenailspa.com</span></li>
+          </ul>
+          <div class="note">Have a question before your visit? <a href="mailto:noenailspa@gmail.com"><strong>Email our team ↗</strong></a>. Online appointments will be available when our booking link launches.</div>
+        </div>
+        <div class="hours-card">
+          <span class="eyebrow">Hours</span>
+          <h3>Business hours</h3>
+          <div class="hours-table">
+            <strong>Monday</strong><span>9:30 AM – 7:00 PM</span>
+            <strong>Tuesday</strong><span>9:30 AM – 7:00 PM</span>
+            <strong>Wednesday</strong><span>9:30 AM – 7:00 PM</span>
+            <strong>Thursday</strong><span>9:30 AM – 7:00 PM</span>
+            <strong>Friday</strong><span>9:30 AM – 7:00 PM</span>
+            <strong>Saturday</strong><span>9:30 AM – 7:00 PM</span>
+            <strong>Sunday</strong><span>11:00 AM – 5:00 PM</span>
+          </div>
+          <div class="note">We look forward to welcoming you! Our grand opening date and online booking link will be announced soon.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-box">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="NOE' Nails Spa logo" />
+        <div>
+          <div class="serif" style="font-size:24px;letter-spacing:.08em;color:var(--text)">NOE'</div>
+          <div style="font-size:10px;letter-spacing:.34em;text-transform:uppercase">Nails Spa</div>
+        </div>
+      </div>
+      <div class="small">4720 FM 2920, Suite 6, Spring, TX 77388 · <a href="mailto:noenailspa@gmail.com">noenailspa@gmail.com</a> · noenailspa.com · © <span id="year"></span> NOE' Nails Spa</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function toggleMenu(btn){
+      const nav = document.getElementById('navLinks');
+      const open = nav.classList.toggle('show');
+      btn.setAttribute('aria-expanded', String(open));
+    }
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('show');
+        const btn = document.querySelector('.menu-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
