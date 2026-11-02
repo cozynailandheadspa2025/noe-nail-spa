@@ -1,0 +1,11 @@
+NOE’ Nails Spa – Website Upload & Pricing Update
+
+1. Extract this ZIP file.
+2. Visit https://github.com/cozynailandheadspa2025/noe-nail-spa
+3. Upload/replace index.html and services.html in the repository root.
+4. Upload/replace the complete assets folder, preserving names and structure.
+5. Commit the changes. GitHub Pages will publish automatically if already configured.
+
+Updated: All matching service prices copied from Sky Nails Salon Spring's published service list as temporary prices. Threading, Bikini Waxing, and Brazilian Waxing have all been removed from the Services page. Lash refill has no published comparison price and is listed as Ask for pricing.
+
+Before grand opening, confirm the service products, descriptions, and pricing. The booking link and phone number remain pending.

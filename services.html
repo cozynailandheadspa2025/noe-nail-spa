@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Explore NOE’ Nails Spa services and prices in Spring, TX: pedicures, manicures, nail enhancements, kids’ nail care, lash extensions, and waxing." name="description"/><title>Services | NOE’ Nails Spa – Spring, TX</title>
+<style>
+    :root{
+      --bg:#fffbf7;
+      --cream:#f7efe6;
+      --soft:#f0e4d6;
+      --sand:#e3d0bb;
+      --latte:#d2b496;
+      --gold:#b58b5a;
+      --gold-deep:#9d7446;
+      --text:#5d4a3b;
+      --muted:#877362;
+      --white:#ffffff;
+      --shadow:0 18px 45px rgba(98,71,44,.10);
+      --radius:24px;
+      --container:min(1180px, calc(100% - 40px));
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial, Helvetica, sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit}
+    .container{width:var(--container);margin:auto}
+    .serif{font-family:Georgia, 'Times New Roman', serif}
+    .eyebrow{display:inline-block;font-size:11px;letter-spacing:.30em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    .section{padding:90px 0}
+    .section-title{font:normal clamp(34px,4vw,56px) Georgia, 'Times New Roman', serif;line-height:1.12;margin:16px 0 12px}
+    .section-copy{max-width:620px;color:var(--muted);margin:0 auto}
+    .btn-row{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;background:var(--text);border:1px solid var(--text);color:#fff;font-size:12px;letter-spacing:.16em;text-transform:uppercase;transition:.2s ease;cursor:pointer}
+    .btn:hover{background:var(--gold);border-color:var(--gold)}
+    .btn.alt{background:transparent;color:var(--text);border-color:#cbb39a}
+    .btn.alt:hover{background:var(--cream)}
+
+    header{position:sticky;top:0;z-index:30;background:rgba(255,251,247,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(205,182,156,.35)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px;min-width:0}
+    .brand img{height:50px;width:auto;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .brand-text{min-width:0}
+    .brand-text strong{display:block;font:normal 24px Georgia,serif;letter-spacing:.08em}
+    .brand-text span{display:block;font-size:10px;letter-spacing:.33em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+    .nav-links{display:flex;align-items:center;gap:26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+    .nav-links a{color:var(--muted)}
+    .nav-links a:hover{color:var(--gold-deep)}
+    .menu-toggle{display:none;background:none;border:0;font-size:28px;color:var(--text)}
+
+    .hero{padding:34px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:stretch}
+    .hero-copy{background:linear-gradient(145deg,#fbf5ee,#efdfcf);border-radius:32px;padding:clamp(30px,4vw,58px);display:flex;flex-direction:column;justify-content:center;min-height:640px;box-shadow:var(--shadow)}
+    .hero-copy h1{font:normal clamp(48px,6vw,86px) Georgia,'Times New Roman',serif;line-height:.98;margin:20px 0 18px;color:#503f31}
+    .hero-copy p{font-size:16px;color:var(--muted);max-width:500px;margin:0 0 30px}
+    .hero-points{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 34px;padding:0;list-style:none}
+    .hero-points li{padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(197,169,137,.35);font-size:12px;letter-spacing:.10em;text-transform:uppercase;color:var(--text)}
+    .hero-image{border-radius:32px;overflow:hidden;box-shadow:var(--shadow);min-height:640px}
+    .hero-image img{width:100%;height:100%;object-fit:cover}
+
+    .intro{padding-top:18px;padding-bottom:12px}
+    .intro-card{background:var(--white);border-radius:28px;padding:26px 28px;border:1px solid rgba(210,191,168,.5);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .intro-card div{padding:8px 10px}
+    .intro-card h3{font:normal 22px Georgia,serif;margin:0 0 10px}
+    .intro-card p{margin:0;color:var(--muted);font-size:14px}
+
+    .center-head{text-align:center;margin-bottom:40px}
+    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .service-card{background:var(--white);border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(216,197,176,.55)}
+    .service-card img{width:100%;aspect-ratio:5/4;object-fit:cover}
+    .service-body{padding:26px}
+    .service-num{font:normal 16px Georgia,serif;letter-spacing:.16em;color:var(--gold)}
+    .service-body h3{font:normal 34px Georgia,serif;margin:8px 0 10px}
+    .service-body p{margin:0;color:var(--muted)}
+
+    .about{background:linear-gradient(180deg,#f9f2ea 0%, #fffbf7 100%)}
+    .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+    .about-image{border-radius:32px;overflow:hidden;box-shadow:var(--shadow)}
+    .about-image img{width:100%;height:100%;object-fit:cover}
+    .about-copy p{color:var(--muted);margin:0 0 16px}
+    .about-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0 0;padding:0;list-style:none}
+    .about-list li{background:#fff;border:1px solid rgba(216,197,176,.55);padding:16px 18px;border-radius:18px;font-size:14px;color:var(--text);box-shadow:0 8px 20px rgba(98,71,44,.06)}
+
+    .gallery-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:18px}
+    .gallery-grid .tile{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);min-height:250px}
+    .gallery-grid .tile img{width:100%;height:100%;object-fit:cover}
+    .gallery-grid .tile.tall{grid-row:span 2;min-height:520px}
+    .gallery-grid .tile.copy{background:linear-gradient(150deg,#f5ebe0,#ead8c5);padding:32px;display:flex;flex-direction:column;justify-content:center}
+    .gallery-grid .tile.copy h3{font:normal 38px Georgia,serif;margin:8px 0 14px}
+    .gallery-grid .tile.copy p{margin:0;color:var(--muted)}
+
+    .cta{padding:80px 0}
+    .cta-box{background:linear-gradient(135deg,#5d4a3b,#7a5e49);color:#fff;border-radius:32px;padding:44px 38px;display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center;box-shadow:var(--shadow)}
+    .cta-box p{margin:0;color:#efe4da}
+    .cta-actions{display:flex;justify-content:flex-end;gap:14px;flex-wrap:wrap}
+    .cta .btn{background:#fff;color:var(--text);border-color:#fff}
+    .cta .btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+    .cta .btn.alt:hover{background:rgba(255,255,255,.08)}
+
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .contact-card,.hours-card{background:#fff;border:1px solid rgba(216,197,176,.55);border-radius:28px;padding:28px;box-shadow:var(--shadow)}
+    .contact-card h3,.hours-card h3{font:normal 30px Georgia,serif;margin:0 0 14px}
+    .detail-list{margin:0;padding:0;list-style:none}
+    .detail-list li{padding:14px 0;border-bottom:1px solid #eee1d4}
+    .detail-list li:last-child{border-bottom:0;padding-bottom:0}
+    .detail-label{display:block;font-size:11px;letter-spacing:.20em;text-transform:uppercase;color:var(--gold)}
+    .detail-value{display:block;margin-top:4px;color:var(--muted);overflow-wrap:anywhere}.detail-value a,.note a,footer a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}footer a{color:inherit}.directions-link{display:inline-flex;margin-top:10px;padding:9px 16px;border:1px solid #cbb39a;border-radius:999px;color:var(--gold-deep);font-size:12px;letter-spacing:.08em}.directions-link:hover{background:var(--cream)}
+    .hours-table{display:grid;grid-template-columns:1fr auto;gap:10px 20px;color:var(--muted);font-size:15px}
+    .hours-table strong{color:var(--text);font-weight:600}
+    .note{margin-top:18px;font-size:13px;color:var(--muted);background:var(--cream);padding:14px 16px;border-radius:16px}
+
+    footer{padding:36px 0 50px;color:var(--muted)}
+    .footer-box{padding-top:28px;border-top:1px solid rgba(210,191,168,.55);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .footer-brand{display:flex;align-items:center;gap:14px}
+    .footer-brand img{height:48px;width:auto;border-radius:8px}
+    .small{font-size:13px}
+
+    @media (max-width: 980px){
+      .hero-grid,.about-grid,.cta-box,.contact-grid{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr 1fr}
+      .gallery-grid .tile.tall{grid-row:auto;min-height:320px}
+      .cta-actions{justify-content:flex-start}
+      .intro-card{grid-template-columns:1fr}
+    }
+    @media (max-width: 760px){
+      .nav{height:74px}
+      .menu-toggle{display:block}
+      .nav-links{display:none;position:absolute;top:74px;left:0;right:0;background:rgba(255,251,247,.98);padding:20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid rgba(205,182,156,.35)}
+      .nav-links.show{display:flex}
+      .brand img{height:44px}
+      .brand-text strong{font-size:20px}
+      .hero-copy,.hero-image{min-height:auto}
+      .section{padding:72px 0}
+      .gallery-grid{grid-template-columns:1fr}
+      .gallery-grid .tile{min-height:320px}
+      .gallery-grid .tile.copy{min-height:auto}
+      .about-list{grid-template-columns:1fr}
+      .hero-copy h1{font-size:56px}
+    }
+  
+.page-hero{padding:62px 0 66px;background:linear-gradient(120deg,#f7eee5,#ebd9c7)}
+.page-hero .container{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:46px}
+.page-hero h1{font:normal clamp(44px,6vw,72px) Georgia,serif;line-height:1.07;margin:14px 0 16px}
+.page-hero p{max-width:640px;color:var(--muted);font-size:17px;margin:0 0 22px}
+.page-hero img{width:100%;height:340px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}
+.notice-menu{background:#fff9f1;border:1px solid #e4d5c3;border-radius:20px;padding:16px 20px;margin-top:25px;font-size:13px;color:#7e6958}
+.category-nav{display:flex;gap:10px;flex-wrap:wrap;padding:24px 0 6px}
+.category-nav a{border:1px solid #dfcdb9;background:white;color:#6b5645;border-radius:999px;padding:8px 14px;font-size:12px;letter-spacing:.04em}
+.category-nav a:hover{background:var(--cream)}
+.menu-section{padding:55px 0 18px;scroll-margin-top:100px}
+.menu-heading{display:flex;gap:20px;justify-content:space-between;align-items:flex-end;margin-bottom:18px}
+.menu-heading h2{font:normal clamp(31px,4vw,46px) Georgia,serif;margin:8px 0 4px;line-height:1.14}
+.menu-heading p{color:var(--muted);font-size:14px;margin:0;max-width:700px}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.menu-item{background:white;border:1px solid rgba(216,197,176,.65);border-radius:18px;padding:19px 20px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;box-shadow:0 7px 23px rgba(98,71,44,.035)}
+.menu-item h3{font:normal 22px Georgia,serif;margin:0 0 5px}
+.menu-item p{color:var(--muted);font-size:13px;line-height:1.55;margin:0;max-width:530px}
+.menu-item .price{flex-shrink:0;font-size:11px;color:var(--gold-deep);text-align:right;letter-spacing:.03em;white-space:nowrap;margin-top:4px}
+.menu-compact .menu-item{padding:16px 18px}
+.menu-compact .menu-item h3{font-size:19px}
+.menu-banner{margin:22px 0 4px;border:1px solid #e1cbb0;background:#f6ece0;border-radius:18px;padding:18px 22px;color:#765d47;font-size:14px}
+.menu-divider{height:1px;background:linear-gradient(90deg,transparent,#d9c5ad,transparent);margin-top:45px}
+.footer-note{font-size:12px;color:var(--muted);line-height:1.65}
+@media(max-width:850px){.page-hero .container{grid-template-columns:1fr}.page-hero img{height:280px}.menu-grid{grid-template-columns:1fr}}
+@media(max-width:550px){.page-hero{padding:40px 0}.menu-item{padding:17px;gap:10px}.menu-item h3{font-size:20px}.menu-item .price{font-size:10px}.menu-heading{display:block}.menu-section{padding:44px 0 8px}}
+
+.menu-item .price{font-size:15px;font-weight:700;line-height:1.35;color:#916839;min-width:86px;} .menu-item .price-line{display:block;font-size:12px;font-weight:400;margin-bottom:5px;} .menu-item .price-line strong{font-size:15px;font-weight:700;} @media(max-width:550px){.menu-item .price{font-size:14px;min-width:83px}.menu-item .price-line strong{font-size:14px}.menu-item .price-line{font-size:11px}}
+</style></head>
+<body><header><div class="container nav"><a aria-label="NOE’ Nails Spa home" class="brand" href="index.html#home"><img alt="NOE’ Nails Spa logo" src="assets/logo.jpg"/><span class="brand-text"><strong>NOE’</strong><span>Nails Spa</span></span></a><button aria-expanded="false" aria-label="Open menu" class="menu-toggle" onclick="toggleMenu(this)">☰</button><nav class="nav-links" id="navLinks"><a href="index.html#home">Home</a><a aria-current="page" href="services.html">Services</a><a href="index.html#about">About</a><a href="index.html#gallery">Gallery</a><a href="index.html#contact">Contact</a><a class="btn" href="index.html#contact" style="padding:12px 20px">Booking Soon</a></nav></div></header>
+<main><section class="page-hero"><div class="container"><div><span class="eyebrow">NOE’ Nails Spa · Spring, Texas</span><h1>Explore Our Services</h1><p>A carefully designed menu for your beauty and self-care moments — from polished nails and pedicure rituals to lashes and waxing.</p><a class="btn" href="index.html#contact">Contact NOE’</a><div class="notice-menu">Pre-opening menu: Prices are currently set to match our selected reference salon and may be adjusted before opening. Services with a “+” start at the listed price. Booking details coming soon.</div></div><img alt="Spa pedicure concept photography" src="assets/pedicure.webp"/></div></section>
+<div class="container"><nav aria-label="Service categories" class="category-nav"><a href="#pedicures">Pedicures</a><a href="#nails">Manicures &amp; Nails</a><a href="#addons">Add-ons</a><a href="#kids">Kids</a><a href="#lashes">Lashes</a><a href="#waxing">Waxing &amp; Brows</a></nav><section class="menu-section" id="pedicures"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Pedicures</h2><p>Choose your favorite spa pedicure experience. Treatment products and exact inclusions may vary and will be finalized before launch.</p></div></div><div class="menu-grid"><article class="menu-item"><div><h3>Signature Spa Pedicure</h3><p>Essential foot care with a refreshing soak, nail shaping, cuticle care and a polished finish.</p></div><span class="price">$35</span></article>
+<article class="menu-item"><div><h3>Deluxe Spa Pedicure</h3><p>A relaxing upgrade with exfoliation and nourishing care for softer-feeling feet.</p></div><span class="price">$40</span></article>
+<article class="menu-item"><div><h3>Organic Spa Pedicure</h3><p>A nature-inspired pedicure experience with a gentle scrub and a soothing finish.</p></div><span class="price">$50</span></article>
+<article class="menu-item"><div><h3>Pearl Spa Pedicure</h3><p>An elegant, pearl-inspired treatment with extra attention to skin softness.</p></div><span class="price">$60</span></article>
+<article class="menu-item"><div><h3>Volcano Spa Pedicure</h3><p>A spa-style pedicure featuring a playful, bubbling soak and a pampering finish.</p></div><span class="price">$60</span></article>
+<article class="menu-item"><div><h3>Jelly Spa Pedicure</h3><p>Enjoy a comforting jelly soak and gentle attention to dry, tired feet.</p></div><span class="price">$65</span></article>
+<article class="menu-item"><div><h3>Mineral Spa Pedicure</h3><p>A premium spa pedicure inspired by mineral care, with comforting finishing touches.</p></div><span class="price">$70</span></article>
+<article class="menu-item"><div><h3>Herbal Spa Pedicure</h3><p>A fresh botanical-inspired experience for moments of relaxation.</p></div><span class="price">$65</span></article>
+<article class="menu-item"><div><h3>Luxury Spa Pedicure</h3><p>Our most indulgent pedicure concept, designed around comfort and a luxurious finish.</p></div><span class="price">$80</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section" id="nails"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Manicures &amp; Nail Enhancements</h2><p>Our manicure and nail enhancement options, with separate full-set and refill prices where available.</p></div></div><div class="menu-grid"><article class="menu-item"><div><h3>Classic Manicure</h3><p>Nail shaping, cuticle care and regular polish.</p></div><span class="price">$20</span></article>
+<article class="menu-item"><div><h3>Gel Manicure</h3><p>A polished gel finish for beautiful everyday wear.</p></div><span class="price">$40</span></article>
+<article class="menu-item"><div><h3>Deluxe Manicure</h3><p>A manicure with extra time devoted to pampering and hand care.</p></div><span class="price">$40</span></article>
+<article class="menu-item"><div><h3>Color Powder Full Set / Refill</h3><p>Powder enhancements with custom shaping and finish.</p></div><span class="price"><span class="price-line">Full set <strong>$55+</strong></span><span class="price-line">Refill <strong>$50+</strong></span></span></article>
+<article class="menu-item"><div><h3>Pink &amp; White Full Set / Refill</h3><p>A timeless two-tone nail look with a clean, classic finish.</p></div><span class="price"><span class="price-line">Full set <strong>$60+</strong></span><span class="price-line">Refill <strong>$55+</strong></span></span></article>
+<article class="menu-item"><div><h3>Acrylic with Gel Polish Full Set / Refill</h3><p>Enhancements finished with a glossy gel color.</p></div><span class="price"><span class="price-line">Full set <strong>$55</strong></span><span class="price-line">Refill <strong>$50</strong></span></span></article>
+<article class="menu-item"><div><h3>Builder Gel Full Set / Refill</h3><p>Structured gel enhancements for a natural-looking manicure.</p></div><span class="price"><span class="price-line">Full set <strong>$60+</strong></span><span class="price-line">Refill <strong>$55+</strong></span></span></article>
+<article class="menu-item"><div><h3>Dip Powder</h3><p>Powder color options with a neat, finished look.</p></div><span class="price">$50+</span></article>
+<article class="menu-item"><div><h3>Gel-X Extensions</h3><p>Soft-gel tips for added nail length and versatile shapes.</p></div><span class="price">$65</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section" id="addons"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Nail Add-ons &amp; Extras</h2><p>Customize your appointment with finishes, shapes, designs, removals and repair services.</p></div></div><div class="menu-grid menu-compact"><article class="menu-item"><div><h3>Hot Stone Massage</h3><p>Optional relaxing add-on to eligible pedicure services.</p></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Paraffin Treatment</h3><p>Optional softening hand or foot treatment.</p></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Gel Polish Upgrade</h3><p>Switch an eligible service from regular to gel polish.</p></div><span class="price">$20+</span></article>
+<article class="menu-item"><div><h3>French Tips</h3><p>Classic white tips or your favorite color variation.</p></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Nail Art / Design</h3><p>Price varies by the complexity and details of your custom design.</p></div><span class="price">Custom pricing</span></article>
+<article class="menu-item"><div><h3>Special Shapes</h3><p>Almond, oval, coffin, stiletto and more.</p></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Extra Length</h3><p>Length upgrade for eligible extension services.</p></div><span class="price">$5+</span></article>
+<article class="menu-item"><div><h3>Nail Repair</h3><p>Fix an individual chipped or damaged enhancement.</p></div><span class="price">$7+</span></article>
+<article class="menu-item"><div><h3>Regular Polish Change</h3><p>Refresh polish on hands or feet.</p></div><span class="price">$15</span></article>
+<article class="menu-item"><div><h3>Gel Polish Change — Hands</h3><p>Fresh gel polish color for hands.</p></div><span class="price">$25</span></article>
+<article class="menu-item"><div><h3>Gel Polish Change — Toes</h3><p>Fresh gel polish color for toes.</p></div><span class="price">$25</span></article>
+<article class="menu-item"><div><h3>Gel Soak Off</h3><p>Removal of existing gel product.</p></div><span class="price">$10</span></article>
+<article class="menu-item"><div><h3>Powder Soak Off</h3><p>Removal of previous enhancements.</p></div><span class="price">$10</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section" id="kids"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Kids’ Services</h2><p>Little beauty moments for younger guests. Age guidelines will be announced with our final menu.</p></div></div><div class="menu-grid menu-compact"><article class="menu-item"><div><h3>Kids’ Manicure</h3><p>Simple nail care for little hands.</p></div><span class="price">$10</span></article>
+<article class="menu-item"><div><h3>Kids’ Pedicure</h3><p>A gentle, age-appropriate foot-care service.</p></div><span class="price">$20</span></article>
+<article class="menu-item"><div><h3>Kids’ Polish Change</h3><p>A fun color refresh for young guests.</p></div><span class="price">$7+</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section" id="lashes"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Lash Extensions</h2><p>Choose the look that feels most like you, from soft and natural to bold and full.</p></div></div><div class="menu-grid"><article class="menu-item"><div><h3>Classic Lash Extensions</h3><p>A soft, natural-looking lash enhancement.</p></div><span class="price">$85</span></article>
+<article class="menu-item"><div><h3>Hybrid Lash Extensions</h3><p>A balanced blend of subtle definition and added fullness.</p></div><span class="price">$105</span></article>
+<article class="menu-item"><div><h3>Volume Lash Extensions</h3><p>A fuller lash look with more dramatic definition.</p></div><span class="price">$125</span></article>
+<article class="menu-item"><div><h3>Lash Refill</h3><p>Refill pricing and timing will be published once our lash maintenance menu is finalized.</p></div><span class="price">Ask for pricing</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section" id="waxing"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Waxing &amp; Brow Tint</h2><p>Beauty maintenance for smooth skin and beautifully groomed brows.</p></div></div><div class="menu-grid menu-compact"><article class="menu-item"><div><h3>Eyebrow Waxing</h3><p>Carefully shaped, neatly groomed brows.</p></div><span class="price">$10</span></article>
+<article class="menu-item"><div><h3>Upper Lip Waxing</h3><p>A targeted treatment for the upper-lip area.</p></div><span class="price">$8</span></article>
+<article class="menu-item"><div><h3>Chin Waxing</h3><p>Targeted chin hair removal.</p></div><span class="price">$10+</span></article>
+<article class="menu-item"><div><h3>Forehead Waxing</h3><p>A tidy hair-removal option for the forehead area.</p></div><span class="price">$15+</span></article>
+<article class="menu-item"><div><h3>Full Face Waxing</h3><p>A multi-area facial waxing appointment.</p></div><span class="price">$35</span></article>
+<article class="menu-item"><div><h3>Underarm Waxing</h3><p>Smooth underarm care.</p></div><span class="price">$20+</span></article>
+<article class="menu-item"><div><h3>Half Arm Waxing</h3><p>Targeted hair removal for part of the arms.</p></div><span class="price">$25+</span></article>
+<article class="menu-item"><div><h3>Full Arm Waxing</h3><p>Hair removal from shoulder to wrist.</p></div><span class="price">$40+</span></article>
+<article class="menu-item"><div><h3>Half Leg Waxing</h3><p>An option for part of the legs.</p></div><span class="price">$35+</span></article>
+<article class="menu-item"><div><h3>Full Leg Waxing</h3><p>A complete leg waxing appointment.</p></div><span class="price">$55+</span></article>
+<article class="menu-item"><div><h3>Chest Waxing</h3><p>Upper-body hair removal option.</p></div><span class="price">$45+</span></article>
+<article class="menu-item"><div><h3>Back Waxing</h3><p>Upper-body hair removal option.</p></div><span class="price">$45+</span></article>
+<article class="menu-item"><div><h3>Eyebrow Tint</h3><p>Enhance your brow color with a tinted finish.</p></div><span class="price">$20</span></article></div><div class="menu-divider"></div></section>
+</div>
+<section class="cta"><div class="container cta-box"><div><span class="eyebrow" style="color:#f0d2aa">Visit NOE’</span><h2 class="section-title" style="color:#fff;margin-top:10px">Your next beauty moment starts here.</h2><p>NOE’ Nails Spa · 4720 FM 2920, Suite 6, Spring, TX 77388. Monday–Saturday 9:30 AM–7:00 PM · Sunday 11:00 AM–5:00 PM.</p></div><div class="cta-actions"><a class="btn" href="mailto:noenailspa@gmail.com">Email Us</a><a class="btn alt" href="index.html#contact">Location &amp; Hours</a></div></div></section>
+</main><footer><div class="container footer-box"><div class="footer-brand"><img alt="NOE’ Nails Spa logo" src="assets/logo.jpg"/><div><div class="serif" style="font-size:24px;letter-spacing:.08em;color:var(--text)">NOE’</div><div style="font-size:10px;letter-spacing:.34em;text-transform:uppercase">Nails Spa</div></div></div><div class="small">4720 FM 2920, Suite 6, Spring, TX 77388 · <a href="mailto:noenailspa@gmail.com">noenailspa@gmail.com</a> · noenailspa.com · © <span id="year"></span> NOE’ Nails Spa</div></div><div class="container footer-note" style="margin-top:14px">Images are digitally created concepts, not photographs of the finished NOE’ salon. Prices are preliminary and subject to change. “+” indicates a starting price.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();function toggleMenu(btn){const n=document.getElementById('navLinks');const open=n.classList.toggle('show');btn.setAttribute('aria-expanded',String(open));}document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('show');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false')}));</script></body></html>
