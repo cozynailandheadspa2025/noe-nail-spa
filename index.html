@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="NOE' Nails Spa is your destination for beauty and relaxation at 4720 FM 2920, Suite 6, Spring, TX 77388. Manicure, pedicure, waxing and lash extensions. Call (832) 447-4590 or email noenailspa@gmail.com." />
+  <meta name="description" content="Discover NOE' Nails Spa at 4720 FM 2920, Suite 6, Spring, TX 77388. Manicure, pedicure, waxing and lash extensions. Call (832) 447-4590 or email noenailspa@gmail.com." />
   <title>NOE' Nails Spa | Spring, Texas</title>
   <style>
     :root{
@@ -54,8 +54,6 @@
     .hero{padding:34px 0 36px}
     .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:stretch}
     .hero-copy{background:linear-gradient(145deg,#fbf5ee,#efdfcf);border-radius:32px;padding:clamp(30px,4vw,58px);display:flex;flex-direction:column;justify-content:center;min-height:640px;box-shadow:var(--shadow)}
-    .hero-brand-intro{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
-    .hero-tagline{font:italic clamp(17px,2vw,22px) Georgia,'Times New Roman',serif;color:var(--gold-deep);letter-spacing:.015em;line-height:1.35}
     .hero-copy h1{font:normal clamp(48px,6vw,86px) Georgia,'Times New Roman',serif;line-height:.98;margin:20px 0 18px;color:#503f31}
     .hero-copy p{font-size:16px;color:var(--muted);max-width:500px;margin:0 0 30px}
     .hero-points{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 34px;padding:0;list-style:none}
@@ -182,6 +180,14 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
 @media(max-width:850px){.noe-connect-grid{grid-template-columns:1fr}.noe-map-frame{height:340px}}
 @media(max-width:550px){.noe-connect{padding-bottom:60px}.noe-map-frame{height:305px}.noe-map-meta{padding:20px}.noe-social-panel{padding:22px}.noe-map-link{width:100%;justify-content:center}.noe-mini-card{display:block}.noe-mini-card .noe-footer-social{margin-top:16px}}
 
+
+/* Appointment booking: easy to reach on phones and desktops */
+.mobile-book{display:none}
+@media(max-width:760px){
+  body{padding-bottom:78px}
+  .mobile-book{display:flex;position:fixed;z-index:50;bottom:14px;left:calc(50% - min(230px, calc(100% - 36px)) / 2);width:min(230px, calc(100% - 36px));align-items:center;justify-content:center;gap:10px;padding:14px 22px;border:1px solid #b58b5a;border-radius:999px;background:#5d4a3b;color:#fff;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 8px 22px rgba(65,42,27,.25)}
+  .mobile-book:focus-visible{outline:3px solid #bd945d;outline-offset:3px}
+}
 </style>
 </head>
 <body>
@@ -198,7 +204,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-        <a class="btn" href="tel:+18324474590" style="padding:12px 20px">Call Us</a>
+        <a class="btn" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer" style="padding:12px 20px">Book Now</a>
       </nav>
     </div>
   </header>
@@ -207,9 +213,9 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="hero-brand-intro"><span class="eyebrow">NOE’ NAILS SPA</span><span class="hero-tagline">Your Destination for Beauty &amp; Relaxation</span></div>
+          <span class="eyebrow">NOE’ Nails Spa · Your Destination for Beauty &amp; Relaxation</span>
           <h1>Beauty in<br>every detail.</h1>
-          <p>Discover a refined beauty escape in Spring, Texas, where elegant nails, relaxing pedicures, smooth skin, and beautiful lashes come together in a warm, luxurious space.</p>
+          <p>Welcome to NOE' Nails Spa — a refined beauty destination where elegant nails, relaxing spa moments, smooth skin, and beautiful lashes come together in one warm, luxurious space.</p>
           <ul class="hero-points">
             <li>Manicure</li>
             <li>Pedicure</li>
@@ -217,8 +223,9 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
             <li>Lash Extensions</li>
           </ul>
           <div class="btn-row">
-            <a class="btn" href="services.html">View Full Service Menu</a>
-            <a class="btn alt" href="tel:+18324474590">Call (832) 447-4590</a>
+            <a class="btn" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment with NOE’ Nails Spa on SimplePOS">Book Now</a>
+            <a class="btn alt" href="services.html">View Full Service Menu</a>
+            <a class="btn alt" href="tel:+18324474590">Call Us</a>
           </div>
         </div>
         <div class="hero-image">
@@ -249,7 +256,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
         <div class="center-head">
           <span class="eyebrow">Our Services</span>
           <h2 class="section-title">Beauty services designed to refresh, polish, and elevate.</h2>
-          <p class="section-copy">Explore our curated menu of nail and beauty services, designed for guests who appreciate beautiful results and a relaxing experience.</p>
+          <p class="section-copy">We are preparing a curated menu of nail and beauty services for guests who appreciate both beautiful results and a relaxing experience.</p>
         </div>
         <div class="services-grid">
           <article class="service-card">
@@ -307,7 +314,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
             <li><strong>Elegant Atmosphere</strong><br>Warm, welcoming, and curated to feel relaxing.</li>
             <li><strong>Beauty Essentials</strong><br>Manicures, pedicures, waxing, and lashes all in one place.</li>
             <li><strong>Guest Experience</strong><br>Every detail is planned to feel comfortable and refined.</li>
-            <li><strong>Visit NOE’</strong><br>Call us to reserve your next beauty appointment.</li>
+            <li><strong>Easy Appointments</strong><br>Book online anytime or call our team with questions.</li>
           </ul>
         </div>
       </div>
@@ -318,7 +325,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
         <div class="center-head">
           <span class="eyebrow">Gallery</span>
           <h2 class="section-title">A glimpse of the NOE' experience.</h2>
-          <p class="section-copy">Soft tones, delicate details, and a calming beauty-spa ambiance — inspiration behind the NOE’ experience.</p>
+          <p class="section-copy">Soft tones, delicate details, and a calming beauty-spa ambiance — the kind of atmosphere we are creating for every visit.</p>
         </div>
         <div class="gallery-grid">
           <div class="tile tall"><img src="assets/gallery-nails.webp" alt="Elegant nude manicure close-up" /></div>
@@ -337,13 +344,13 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
     <section class="cta">
       <div class="container cta-box">
         <div>
-          <span class="eyebrow" style="color:#f0d2aa">Your Next Beauty Appointment</span>
-          <h2 class="section-title" style="color:#fff;margin-top:10px">Your beauty moment starts here.</h2>
-          <p>Ready to treat yourself? Call (832) 447-4590 to arrange your appointment. Online booking will be available here once our booking link is added.</p>
+          <span class="eyebrow" style="color:#f0d2aa">Your Beauty Moment</span>
+          <h2 class="section-title" style="color:#fff;margin-top:10px">Ready for a little self-care?</h2>
+          <p>Explore our manicure, pedicure, waxing and lash services, then choose your preferred appointment time with our online booking system.</p>
         </div>
         <div class="cta-actions">
-          <a class="btn" href="tel:+18324474590">Call Us</a>
-          <a class="btn alt" href="#home">Back to Top</a>
+          <a class="btn" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment with NOE’ Nails Spa on SimplePOS">Book Now</a>
+          <a class="btn alt" href="tel:+18324474590">Call Us</a>
         </div>
       </div>
     </section>
@@ -355,12 +362,12 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
           <h3>We can't wait to meet you.</h3>
           <ul class="detail-list">
             <li><span class="detail-label">Location</span><span class="detail-value">4720 FM 2920, Suite 6, Spring, TX 77388</span><a class="directions-link" href="https://www.google.com/maps/search/?api=1&query=4720%20FM%202920%2C%20Suite%206%2C%20Spring%2C%20TX%2077388" target="_blank" rel="noopener noreferrer" aria-label="Get directions to NOE Nails Spa on Google Maps">Get Directions ↗</a></li>
-            <li><span class="detail-label">Booking</span><span class="detail-value">Call us at (832) 447-4590 to book your appointment</span></li>
+            <li><span class="detail-label">Online Booking</span><span class="detail-value"><a href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer">Book your appointment online ↗</a></span></li>
             <li><span class="detail-label">Phone</span><span class="detail-value"><a href="tel:+18324474590">(832) 447-4590 ↗</a></span></li>
             <li><span class="detail-label">Email</span><span class="detail-value"><a href="mailto:noenailspa@gmail.com">noenailspa@gmail.com ↗</a></span></li>
             <li><span class="detail-label">Website</span><span class="detail-value">noenailspa.com</span></li>
           </ul>
-          <div class="note">Have a question before your visit? <a href="tel:+18324474590"><strong>Call us at (832) 447-4590</strong></a> or <a href="mailto:noenailspa@gmail.com"><strong>email our team ↗</strong></a>. Online appointments will be available when our booking link launches.</div>
+          <div class="note">Have a question before your visit? <a href="tel:+18324474590"><strong>Call us at (832) 447-4590</strong></a> or <a href="mailto:noenailspa@gmail.com"><strong>email our team ↗</strong></a>. You can also <a href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer"><strong>book online ↗</strong></a> anytime.</div>
         </div>
         <div class="hours-card">
           <span class="eyebrow">Hours</span>
@@ -374,7 +381,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
             <strong>Saturday</strong><span>9:30 AM – 7:00 PM</span>
             <strong>Sunday</strong><span>11:00 AM – 5:00 PM</span>
           </div>
-          <div class="note">We’re ready to welcome you! Call us at (832) 447-4590 or email noenailspa@gmail.com to book your appointment.</div>
+          <div class="note"><a href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer"><strong>Book online ↗</strong></a> or call (832) 447-4590 with any questions.</div>
         </div>
       </div>
     </section>
@@ -386,7 +393,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
         <div class="noe-map-frame"><iframe title="Map showing 4720 FM 2920, Suite 6, Spring, TX 77388" src="https://maps.google.com/maps?q=4720%20FM%202920%2C%20Suite%206%2C%20Spring%2C%20TX%2077388&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="noe-map-meta"><div><strong>NOE’ Nails Spa</strong><span>4720 FM 2920, Suite 6, Spring, TX 77388</span></div><a class="noe-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=4720%20FM%202920%2C%20Suite%206%2C%20Spring%2C%20TX%2077388" target="_blank" rel="noopener noreferrer">Get Directions ↗</a></div>
       </div>
-      <div class="noe-social-panel"><span class="eyebrow">Stay Inspired</span><h3>Follow the beauty.</h3><p>Discover nail inspiration, lash looks, beauty tips, and the latest from NOE’ Nails Spa.</p><div class="noe-social-links"><a class="noe-social-link" href="https://www.facebook.com/share/1JnkyDMtuo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Visit NOE’ Nails Spa on Facebook"><span class="noe-social-icon"><svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" fill="currentColor"><path d="M13.8 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5V13h2.9v8h3.4z"/></svg></span><span class="noe-social-copy"><strong>Facebook</strong><small>Visit our Facebook page ↗</small></span></a>
+      <div class="noe-social-panel"><span class="eyebrow">Stay Inspired</span><h3>Follow the beauty.</h3><p>Discover nail inspiration, lash looks, beauty tips and our latest creations.</p><div class="noe-social-links"><a class="noe-social-link" href="https://www.facebook.com/share/1JnkyDMtuo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Visit NOE’ Nails Spa on Facebook"><span class="noe-social-icon"><svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" fill="currentColor"><path d="M13.8 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5V13h2.9v8h3.4z"/></svg></span><span class="noe-social-copy"><strong>Facebook</strong><small>Visit our Facebook page ↗</small></span></a>
 <div class="noe-social-link is-pending" aria-label="Instagram: official page link will be added soon"><span class="noe-social-icon"><svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></span><span class="noe-social-copy"><strong>Instagram</strong><small>Official profile link will be added soon</small></span></div>
 <a class="noe-social-link" href="https://www.tiktok.com/@mainguyen0344" target="_blank" rel="noopener noreferrer" aria-label="Visit @mainguyen0344 on TikTok"><span class="noe-social-icon"><svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" fill="currentColor"><path d="M15.4 2h-3.1v13.4c0 1.9-1.4 3-3 3-1.7 0-2.8-1.1-2.8-2.6s1.2-2.7 2.8-2.7c.4 0 .7.1 1.1.2v-3.2a8 8 0 0 0-1.1-.1C5.9 10 3.3 12.6 3.3 16s2.6 5.4 5.9 5.4c3.5 0 6.2-2.6 6.2-6.2V8.1c1.4 1.2 3.2 1.8 5.3 1.8V6.7a6.2 6.2 0 0 1-5.3-4.7z"/></svg></span><span class="noe-social-copy"><strong>TikTok</strong><small>@mainguyen0344 · Follow on TikTok ↗</small></span></a></div><p class="noe-social-note">Instagram link will be added when the official profile is provided.</p></div>
     </div>
@@ -410,6 +417,7 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
 <a href="https://www.tiktok.com/@mainguyen0344" target="_blank" rel="noopener noreferrer" aria-label="Visit @mainguyen0344 on TikTok"><svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" fill="currentColor"><path d="M15.4 2h-3.1v13.4c0 1.9-1.4 3-3 3-1.7 0-2.8-1.1-2.8-2.6s1.2-2.7 2.8-2.7c.4 0 .7.1 1.1.2v-3.2a8 8 0 0 0-1.1-.1C5.9 10 3.3 12.6 3.3 16s2.6 5.4 5.9 5.4c3.5 0 6.2-2.6 6.2-6.2V8.1c1.4 1.2 3.2 1.8 5.3 1.8V6.7a6.2 6.2 0 0 1-5.3-4.7z"/></svg>TikTok</a></div>
 </footer>
 
+  <a class="mobile-book" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer" aria-label="Book NOE’ Nails Spa appointment">Book Now <span aria-hidden="true">↗</span></a>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     function toggleMenu(btn){

@@ -1,14 +1,13 @@
-NOE’ NAILS SPA — WEBSITE PACKAGE
+NOE’ Nails Spa — Website update (online booking integrated)
+======================================================
+Booking link: https://noenailspa6069.simplepos.us/new-home
+Includes: index.html, services.html and assets/ image folder.
 
-1. Extract the ZIP file.
-2. Open the noe-nails-website folder.
-3. Upload index.html and services.html to the ROOT of your GitHub repository (replace existing files).
-4. Keep the assets folder and all its files under /assets. If this is your first upload, include the whole assets folder.
-5. Commit changes. GitHub Pages will update automatically if publishing is configured.
+To update your existing GitHub repository:
+1. Open https://github.com/cozynailandheadspa2025/noe-nail-spa
+2. Replace the root index.html and services.html with these versions.
+3. Keep the assets/ folder at the root (upload it only if it is missing).
+4. Commit changes; GitHub Pages redeploys automatically if already configured.
 
-Brand tagline: NOE’ Nails Spa · Your Destination for Beauty & Relaxation. No 'Now Open' / 'Coming Soon' business announcement on the homepage.
-
-The website uses the address 4720 FM 2920, Suite 6, Spring, TX 77388, with embedded Google Maps and a Get Directions link.
-Facebook and TikTok are linked using user-provided URLs. Instagram has no URL yet and is shown as pending.
-Call us at (832) 447-4590 for appointments. Online booking URL is not provided yet.
-All spa photos are illustrative AI-generated visuals to be replaced with real salon photography later.
+This package does not change DNS or make appointments itself. Clicking Book Now opens SimplePOS in a new tab.
+Instagram link is still waiting for an official URL.
