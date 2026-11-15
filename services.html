@@ -118,6 +118,56 @@
     .footer-brand img{height:48px;width:auto;border-radius:8px}
     .small{font-size:13px}
 
+
+    /* NOE' Nail Enhancements: one refined card; colors matched to other service lists. */
+    #nails .nails-card{
+      width:100%;max-width:none;margin:0;
+      background:#ffffff;border:1px solid #e6d6c4;border-radius:22px;
+      padding:0;overflow:hidden;
+      box-shadow:0 10px 30px rgba(98,71,44,.055);
+    }
+    #nails .nails-card-title{
+      background:#ffffff;border:0;border-bottom:1px solid #e6d6c4;
+      border-radius:0;box-shadow:none;margin:0;padding:25px 18px 22px;
+      text-align:center;
+    }
+    #nails .nails-card-title h2{
+      font:normal clamp(26px,3.2vw,38px)/1.2 Georgia,'Times New Roman',serif;
+      color:#5d4a3b;letter-spacing:0;margin:0;
+    }
+    #nails .nails-table-wrap{width:100%;overflow-x:auto}
+    #nails .nails-table{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff}
+    #nails .nails-table th,#nails .nails-table td{
+      border:0;border-bottom:1px solid #eee5db;
+      padding:15px 20px;vertical-align:middle;background:#fff;
+    }
+    #nails .nails-table tr:last-child td{border-bottom:0}
+    #nails .nails-table th+th,#nails .nails-table td+td{border-left:1px solid #eee5db}
+    #nails .nails-table thead th{
+      background:#faf6f1;color:#6b5645;font-size:13px;font-weight:700;
+      line-height:1.35;letter-spacing:.045em;
+    }
+    #nails .nails-table th:first-child,#nails .nails-table td:first-child{width:54%;text-align:left}
+    #nails .nails-table th:nth-child(2),#nails .nails-table th:nth-child(3),
+    #nails .nails-table td:nth-child(2),#nails .nails-table td:nth-child(3){width:23%;text-align:center}
+    #nails .nails-table tbody td:first-child{font-size:16px;color:#5d4a3b;font-weight:500;line-height:1.45}
+    #nails .nails-table tbody td:nth-child(2),#nails .nails-table tbody td:nth-child(3){
+      font-size:16px;color:#916b40;font-weight:700;line-height:1.45;white-space:nowrap;
+    }
+    #nails .nails-table tbody td:nth-child(2):not(:last-child){border-right:0}
+    #nails .nails-table tbody tr:hover td{background:#fdfaf6}
+    @media(max-width:600px){
+      #nails .nails-card{border-radius:18px}
+      #nails .nails-card-title{padding:20px 10px 18px}
+      #nails .nails-card-title h2{font-size:clamp(22px,5.7vw,29px)}
+      #nails .nails-table th,#nails .nails-table td{padding:13px 9px}
+      #nails .nails-table thead th{font-size:12px;letter-spacing:0}
+      #nails .nails-table tbody td:first-child{font-size:13px;line-height:1.45}
+      #nails .nails-table tbody td:nth-child(2),#nails .nails-table tbody td:nth-child(3){font-size:14px}
+      #nails .nails-table th:first-child,#nails .nails-table td:first-child{width:50%}
+      #nails .nails-table th:nth-child(2),#nails .nails-table th:nth-child(3),
+      #nails .nails-table td:nth-child(2),#nails .nails-table td:nth-child(3){width:25%}
+    }
     @media (max-width: 980px){
       .hero-grid,.about-grid,.cta-box,.contact-grid{grid-template-columns:1fr}
       .services-grid{grid-template-columns:1fr}
@@ -214,6 +264,26 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
   .mobile-book{display:flex;position:fixed;z-index:50;bottom:14px;left:calc(50% - min(230px, calc(100% - 36px)) / 2);width:min(230px, calc(100% - 36px));align-items:center;justify-content:center;gap:10px;padding:14px 22px;border:1px solid #b58b5a;border-radius:999px;background:#5d4a3b;color:#fff;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 8px 22px rgba(65,42,27,.25)}
   .mobile-book:focus-visible{outline:3px solid #bd945d;outline-offset:3px}
 }
+
+/* Clean, easy-to-scan service menus (Pedicure section remains unchanged) */
+.simple-section{padding-top:48px}
+.simple-section .menu-heading{margin-bottom:18px}
+.simple-section .menu-heading h2{font-size:clamp(29px,3.6vw,40px);margin:0;letter-spacing:.005em}
+.price-list{display:grid;grid-template-columns:1fr;gap:0;width:100%;max-width:none;background:#fff;border:1px solid #e6d6c4;border-radius:22px;padding:10px 28px;box-shadow:0 10px 30px rgba(98,71,44,.055)}
+.price-list .menu-item{display:flex;align-items:baseline;gap:12px;padding:14px 2px;border:0;border-bottom:1px solid #f0e8df;border-radius:0;box-shadow:none;background:transparent;min-height:54px}
+.price-list .menu-item:last-child{border-bottom:none}
+.price-list .menu-item>div{flex:0 1 auto;min-width:0;order:1}
+.price-list .menu-item h3{font:normal 18px/1.4 Arial,Helvetica,sans-serif;color:#5b4939;margin:0}
+.price-list .menu-item::before{content:"";order:2;align-self:baseline;flex:1 1 20px;border-bottom:1px dotted #ccbaa5;min-width:10px;transform:translateY(-3px)}
+.price-list .menu-item .price{order:3;margin:0;min-width:0;flex:0 0 auto;font-size:18px;font-weight:700;line-height:1.4;color:#926b40;white-space:nowrap;text-align:right}
+@media(max-width:600px){
+  .simple-section{padding-top:34px}
+  .price-list{padding:7px 15px;border-radius:18px}
+  .price-list .menu-item{padding:12px 2px;gap:8px;min-height:48px}
+  .price-list .menu-item h3{font-size:15px;line-height:1.45}
+  .price-list .menu-item .price{font-size:16px;line-height:1.45}
+  .price-list .menu-item::before{min-width:5px}
+}
 </style></head>
 <body><header><div class="container nav"><a aria-label="NOE’ Nails Spa home" class="brand" href="index.html#home"><img alt="NOE’ Nails Spa logo" src="assets/logo.jpg"/><span class="brand-text"><strong>NOE’</strong><span>Nails Spa</span></span></a><button aria-expanded="false" aria-label="Open menu" class="menu-toggle" onclick="toggleMenu(this)">☰</button><nav class="nav-links" id="navLinks"><a href="index.html#home">Home</a><a aria-current="page" href="services.html">Services</a><a href="index.html#about">About</a><a href="index.html#gallery">Gallery</a><a href="index.html#contact">Contact</a><a class="btn book-primary" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer">Book Now</a></nav></div></header>
 <main><section class="page-hero"><div class="container"><div><span class="eyebrow">NOE’ Nails Spa · Spring, Texas</span><h1>Explore Our Services</h1><p>A carefully designed menu for your beauty and self-care moments — from polished nails and pedicure rituals to lashes and waxing.</p><a class="btn book-primary" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment with NOE’ Nails Spa on SimplePOS">Book Now</a><a class="btn alt" href="tel:+18324474590" style="margin-left:10px">Call Us</a></div><img alt="Spa pedicure concept photography" src="assets/pedicure.webp"/></div></section>
@@ -226,48 +296,50 @@ a.noe-social-link:hover{border-color:var(--gold);transform:translateY(-2px);box-
 <article class="menu-item"><div><h3>Mineral Spa Pedicure</h3><p>A premium spa pedicure inspired by mineral care, with comforting finishing touches.</p></div><span class="price">$70</span></article>
 <article class="menu-item"><div><h3>Herbal Spa Pedicure</h3><p>A fresh botanical-inspired experience for moments of relaxation.</p></div><span class="price">$65</span></article>
 <article class="menu-item"><div><h3>Luxury Spa Pedicure</h3><p>Our most indulgent pedicure concept, designed around comfort and a luxurious finish.</p></div><span class="price">$80</span></article></div><div class="menu-divider"></div></section>
-<section class="menu-section" id="nails"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Manicures &amp; Nail Enhancements</h2><p>Our manicure and nail enhancement options, with separate full-set and refill prices where available.</p></div></div><div class="menu-grid"><article class="menu-item"><div><h3>Classic Manicure</h3><p>Nail shaping, cuticle care and regular polish.</p></div><span class="price">$20</span></article>
-<article class="menu-item"><div><h3>Gel Manicure</h3><p>A polished gel finish for beautiful everyday wear.</p></div><span class="price">$40</span></article>
-<article class="menu-item"><div><h3>Deluxe Manicure</h3><p>A manicure with extra time devoted to pampering and hand care.</p></div><span class="price">$40</span></article>
-<article class="menu-item"><div><h3>Color Powder Full Set / Refill</h3><p>Powder enhancements with custom shaping and finish.</p></div><span class="price"><span class="price-line">Full set <strong>$55+</strong></span><span class="price-line">Refill <strong>$50+</strong></span></span></article>
-<article class="menu-item"><div><h3>Pink &amp; White Full Set / Refill</h3><p>A timeless two-tone nail look with a clean, classic finish.</p></div><span class="price"><span class="price-line">Full set <strong>$60+</strong></span><span class="price-line">Refill <strong>$55+</strong></span></span></article>
-<article class="menu-item"><div><h3>Acrylic with Gel Polish Full Set / Refill</h3><p>Enhancements finished with a glossy gel color.</p></div><span class="price"><span class="price-line">Full set <strong>$55</strong></span><span class="price-line">Refill <strong>$50</strong></span></span></article>
-<article class="menu-item"><div><h3>Builder Gel Full Set / Refill</h3><p>Structured gel enhancements for a natural-looking manicure.</p></div><span class="price"><span class="price-line">Full set <strong>$60+</strong></span><span class="price-line">Refill <strong>$55+</strong></span></span></article>
-<article class="menu-item"><div><h3>Dip Powder</h3><p>Powder color options with a neat, finished look.</p></div><span class="price">$50+</span></article>
-<article class="menu-item"><div><h3>Gel-X Extensions</h3><p>Soft-gel tips for added nail length and versatile shapes.</p></div><span class="price">$65</span></article></div><div class="menu-divider"></div></section>
-<section class="menu-section" id="addons"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Nail Add-ons &amp; Extras</h2><p>Customize your appointment with finishes, shapes, designs, removals and repair services.</p></div></div><div class="menu-grid menu-compact"><article class="menu-item"><div><h3>Hot Stone Massage</h3><p>Optional relaxing add-on to eligible pedicure services.</p></div><span class="price">$5</span></article>
-<article class="menu-item"><div><h3>Paraffin Treatment</h3><p>Optional softening hand or foot treatment.</p></div><span class="price">$5</span></article>
-<article class="menu-item"><div><h3>Gel Polish Upgrade</h3><p>Switch an eligible service from regular to gel polish.</p></div><span class="price">$20+</span></article>
-<article class="menu-item"><div><h3>French Tips</h3><p>Classic white tips or your favorite color variation.</p></div><span class="price">$5</span></article>
-<article class="menu-item"><div><h3>Nail Art / Design</h3><p>Price varies by the complexity and details of your custom design.</p></div><span class="price">Custom pricing</span></article>
-<article class="menu-item"><div><h3>Special Shapes</h3><p>Almond, oval, coffin, stiletto and more.</p></div><span class="price">$5</span></article>
-<article class="menu-item"><div><h3>Extra Length</h3><p>Length upgrade for eligible extension services.</p></div><span class="price">$5+</span></article>
-<article class="menu-item"><div><h3>Nail Repair</h3><p>Fix an individual chipped or damaged enhancement.</p></div><span class="price">$7+</span></article>
-<article class="menu-item"><div><h3>Regular Polish Change</h3><p>Refresh polish on hands or feet.</p></div><span class="price">$15</span></article>
-<article class="menu-item"><div><h3>Gel Polish Change — Hands</h3><p>Fresh gel polish color for hands.</p></div><span class="price">$25</span></article>
-<article class="menu-item"><div><h3>Gel Polish Change — Toes</h3><p>Fresh gel polish color for toes.</p></div><span class="price">$25</span></article>
-<article class="menu-item"><div><h3>Gel Soak Off</h3><p>Removal of existing gel product.</p></div><span class="price">$10</span></article>
-<article class="menu-item"><div><h3>Powder Soak Off</h3><p>Removal of previous enhancements.</p></div><span class="price">$10</span></article></div><div class="menu-divider"></div></section>
-<section class="menu-section" id="kids"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Kids’ Services</h2><p>Little beauty moments for younger guests. Age guidelines will be announced with our final menu.</p></div></div><div class="menu-grid menu-compact"><article class="menu-item"><div><h3>Kids’ Manicure</h3><p>Simple nail care for little hands.</p></div><span class="price">$10</span></article>
-<article class="menu-item"><div><h3>Kids’ Pedicure</h3><p>A gentle, age-appropriate foot-care service.</p></div><span class="price">$20</span></article>
-<article class="menu-item"><div><h3>Kids’ Polish Change</h3><p>A fun color refresh for young guests.</p></div><span class="price">$7+</span></article></div><div class="menu-divider"></div></section>
-<section class="menu-section" id="lashes"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Lash Extensions</h2><p>Choose the look that feels most like you, from soft and natural to bold and full.</p></div></div><div class="menu-grid"><article class="menu-item"><div><h3>Classic Lash Extensions</h3><p>A soft, natural-looking lash enhancement.</p></div><span class="price">$85</span></article>
-<article class="menu-item"><div><h3>Hybrid Lash Extensions</h3><p>A balanced blend of subtle definition and added fullness.</p></div><span class="price">$105</span></article>
-<article class="menu-item"><div><h3>Volume Lash Extensions</h3><p>A fuller lash look with more dramatic definition.</p></div><span class="price">$125</span></article>
-<article class="menu-item"><div><h3>Lash Refill</h3><p>Refill pricing and timing will be published once our lash maintenance menu is finalized.</p></div><span class="price">Ask for pricing</span></article></div><div class="menu-divider"></div></section>
-<section class="menu-section" id="waxing"><div class="menu-heading"><div><span class="eyebrow">NOE’ Services</span><h2>Waxing &amp; Brow Tint</h2><p>Beauty maintenance for smooth skin and beautifully groomed brows.</p></div></div><div class="menu-grid menu-compact"><article class="menu-item"><div><h3>Eyebrow Waxing</h3><p>Carefully shaped, neatly groomed brows.</p></div><span class="price">$10</span></article>
-<article class="menu-item"><div><h3>Upper Lip Waxing</h3><p>A targeted treatment for the upper-lip area.</p></div><span class="price">$8</span></article>
-<article class="menu-item"><div><h3>Chin Waxing</h3><p>Targeted chin hair removal.</p></div><span class="price">$10+</span></article>
-<article class="menu-item"><div><h3>Forehead Waxing</h3><p>A tidy hair-removal option for the forehead area.</p></div><span class="price">$15+</span></article>
-<article class="menu-item"><div><h3>Full Face Waxing</h3><p>A multi-area facial waxing appointment.</p></div><span class="price">$35</span></article>
-<article class="menu-item"><div><h3>Underarm Waxing</h3><p>Smooth underarm care.</p></div><span class="price">$20+</span></article>
-<article class="menu-item"><div><h3>Half Arm Waxing</h3><p>Targeted hair removal for part of the arms.</p></div><span class="price">$25+</span></article>
-<article class="menu-item"><div><h3>Full Arm Waxing</h3><p>Hair removal from shoulder to wrist.</p></div><span class="price">$40+</span></article>
-<article class="menu-item"><div><h3>Half Leg Waxing</h3><p>An option for part of the legs.</p></div><span class="price">$35+</span></article>
-<article class="menu-item"><div><h3>Full Leg Waxing</h3><p>A complete leg waxing appointment.</p></div><span class="price">$55+</span></article>
-<article class="menu-item"><div><h3>Chest Waxing</h3><p>Upper-body hair removal option.</p></div><span class="price">$45+</span></article>
-<article class="menu-item"><div><h3>Back Waxing</h3><p>Upper-body hair removal option.</p></div><span class="price">$45+</span></article>
-<article class="menu-item"><div><h3>Eyebrow Tint</h3><p>Enhance your brow color with a tinted finish.</p></div><span class="price">$20</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section simple-section" id="nails"><div class="nails-card"><div class="nails-card-title"><h2>Manicures &amp; Nail Enhancements</h2></div><div class="nails-table-wrap"><table class="nails-table" aria-label="Manicures and nail enhancements prices for full sets and refills"><thead><tr><th scope="col">Service</th><th scope="col">Full Set</th><th scope="col">Refill</th></tr></thead><tbody>
+<tr><td>Classic Manicure</td><td>$20</td><td>—</td></tr>
+<tr><td>Gel Manicure</td><td>$40</td><td>—</td></tr>
+<tr><td>Deluxe Manicure</td><td>$40</td><td>—</td></tr>
+<tr><td>Color Powder</td><td>$55+</td><td>$50+</td></tr>
+<tr><td>Pink &amp; White</td><td>$60+</td><td>$55+</td></tr>
+<tr><td>Acrylic with Gel Polish</td><td>$55</td><td>$50</td></tr>
+<tr><td>Builder Gel</td><td>$60+</td><td>$55+</td></tr>
+<tr><td>Dip Powder</td><td>$50+</td><td>—</td></tr>
+<tr><td>Gel-X Extensions</td><td>$65</td><td>—</td></tr>
+</tbody></table></div></div><div class="menu-divider"></div></section>
+<section class="menu-section simple-section" id="addons"><div class="menu-heading"><div><h2>Nail Add-ons &amp; Extras</h2></div></div><div class="price-list"><article class="menu-item"><div><h3>Hot Stone Massage</h3></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Paraffin Treatment</h3></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Gel Polish Upgrade</h3></div><span class="price">$20+</span></article>
+<article class="menu-item"><div><h3>French Tips</h3></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Nail Art / Design</h3></div><span class="price">Custom pricing</span></article>
+<article class="menu-item"><div><h3>Special Shapes</h3></div><span class="price">$5</span></article>
+<article class="menu-item"><div><h3>Extra Length</h3></div><span class="price">$5+</span></article>
+<article class="menu-item"><div><h3>Nail Repair</h3></div><span class="price">$7+</span></article>
+<article class="menu-item"><div><h3>Regular Polish Change</h3></div><span class="price">$15</span></article>
+<article class="menu-item"><div><h3>Gel Polish Change — Hands</h3></div><span class="price">$25</span></article>
+<article class="menu-item"><div><h3>Gel Polish Change — Toes</h3></div><span class="price">$25</span></article>
+<article class="menu-item"><div><h3>Gel Soak Off</h3></div><span class="price">$10</span></article>
+<article class="menu-item"><div><h3>Powder Soak Off</h3></div><span class="price">$10</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section simple-section" id="kids"><div class="menu-heading"><div><h2>Kids’ Services</h2></div></div><div class="price-list"><article class="menu-item"><div><h3>Kids’ Manicure</h3></div><span class="price">$10</span></article>
+<article class="menu-item"><div><h3>Kids’ Pedicure</h3></div><span class="price">$20</span></article>
+<article class="menu-item"><div><h3>Kids’ Polish Change</h3></div><span class="price">$7+</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section simple-section" id="lashes"><div class="menu-heading"><div><h2>Lash Extensions</h2></div></div><div class="price-list"><article class="menu-item"><div><h3>Classic Lash Extensions</h3></div><span class="price">$85</span></article>
+<article class="menu-item"><div><h3>Hybrid Lash Extensions</h3></div><span class="price">$105</span></article>
+<article class="menu-item"><div><h3>Volume Lash Extensions</h3></div><span class="price">$125</span></article>
+<article class="menu-item"><div><h3>Lash Refill</h3></div><span class="price">Ask for pricing</span></article></div><div class="menu-divider"></div></section>
+<section class="menu-section simple-section" id="waxing"><div class="menu-heading"><div><h2>Waxing &amp; Brow Tint</h2></div></div><div class="price-list"><article class="menu-item"><div><h3>Eyebrow Waxing</h3></div><span class="price">$10</span></article>
+<article class="menu-item"><div><h3>Upper Lip Waxing</h3></div><span class="price">$8</span></article>
+<article class="menu-item"><div><h3>Chin Waxing</h3></div><span class="price">$10+</span></article>
+<article class="menu-item"><div><h3>Forehead Waxing</h3></div><span class="price">$15+</span></article>
+<article class="menu-item"><div><h3>Full Face Waxing</h3></div><span class="price">$35</span></article>
+<article class="menu-item"><div><h3>Underarm Waxing</h3></div><span class="price">$20+</span></article>
+<article class="menu-item"><div><h3>Half Arm Waxing</h3></div><span class="price">$25+</span></article>
+<article class="menu-item"><div><h3>Full Arm Waxing</h3></div><span class="price">$40+</span></article>
+<article class="menu-item"><div><h3>Half Leg Waxing</h3></div><span class="price">$35+</span></article>
+<article class="menu-item"><div><h3>Full Leg Waxing</h3></div><span class="price">$55+</span></article>
+<article class="menu-item"><div><h3>Chest Waxing</h3></div><span class="price">$45+</span></article>
+<article class="menu-item"><div><h3>Back Waxing</h3></div><span class="price">$45+</span></article>
+<article class="menu-item"><div><h3>Eyebrow Tint</h3></div><span class="price">$20</span></article></div><div class="menu-divider"></div></section>
 </div>
 <section class="cta"><div class="container cta-box"><div><span class="eyebrow" style="color:#f0d2aa">Visit NOE’</span><h2 class="section-title" style="color:#fff;margin-top:10px">Your next beauty moment starts here.</h2><p>NOE’ Nails Spa · 4720 FM 2920, Suite 6, Spring, TX 77388. Monday–Saturday 9:30 AM–7:00 PM · Sunday 11:00 AM–5:00 PM.</p></div><div class="cta-actions"><a class="btn book-primary" href="https://noenailspa6069.simplepos.us/new-home" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment with NOE’ Nails Spa on SimplePOS">Book Now</a><a class="btn alt" href="tel:+18324474590">Call Us</a></div></div></section>
 <section class="noe-mini-connect"><div class="container"><div class="noe-mini-card"><div><span class="eyebrow">Find &amp; Follow Us</span><h3>Stay connected with NOE’.</h3><p>4720 FM 2920, Suite 6, Spring, TX 77388</p><a class="directions-link" href="https://www.google.com/maps/search/?api=1&amp;query=4720%20FM%202920%2C%20Suite%206%2C%20Spring%2C%20TX%2077388" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a></div><div class="noe-footer-social" aria-label="Social media profiles"><a href="https://www.facebook.com/share/1JnkyDMtuo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="NOE’ Nails Spa Facebook"><svg viewBox="0 0 24 24" width="25" height="25" aria-hidden="true" fill="currentColor"><path d="M13.8 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5V13h2.9v8h3.4z"/></svg>Facebook</a>
